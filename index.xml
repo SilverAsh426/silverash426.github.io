@@ -1,23 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>月晓的基地</title>
-    <link>http://example.org/</link>
-    <description>Recent content on 月晓的基地</description>
+    <title>月晓的基建</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 月晓的基建</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hans</language>
-    <lastBuildDate>Fri, 01 May 2020 00:09:25 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>首次入驻</title>
-      <link>http://example.org/posts/%E9%A6%96%E6%AC%A1%E5%85%A5%E9%A9%BB/</link>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>使用huge搭建个人博客</title>
+      <link>http://localhost:1313/post/%E4%BD%BF%E7%94%A8huge%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 01 May 2020 00:09:25 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E9%A6%96%E6%AC%A1%E5%85%A5%E9%A9%BB/</guid>
-      <description>各位好 这是我第一次写博客，希望后面能做得更好！qwq</description>
+      <guid>http://localhost:1313/post/%E4%BD%BF%E7%94%A8huge%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;h1 id=&#34;个人博客的搭建&#34;&gt;个人博客的搭建&lt;/h1&gt;
+&lt;h1 id=&#34;hugo的初步安装windows版&#34;&gt;hugo的初步安装,Windows版&lt;/h1&gt;
+&lt;h2 id=&#34;hugo的获取&#34;&gt;hugo的获取&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;获取连接 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo releases 页面&lt;/a&gt;
+寻找带有“Windows-64bit”字样的zip下载（32位的系统朋友就选择-32bit）&lt;/li&gt;
+&lt;li&gt;解压zip，把hugo.exe放到一个自己喜欢的文件夹（建议新建一个，不推荐在C盘中哦~）&lt;/li&gt;
+&lt;li&gt;将含有exe的文件夹绝对路径添加到PATH中&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;PATH的打开并添加方法：&lt;/li&gt;
+&lt;li&gt;右键“此电脑” or “我的电脑”，属性-高级系统设置-环境变量-在下方系统环境变量中寻找PATH双击打开-新建-粘贴路径并确定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;重启终端，运行
+&lt;pre&gt;&lt;code&gt;hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;正式搭建&#34;&gt;正式搭建&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo官方&lt;/a&gt;，点击Quick Start进入教程页面&lt;/li&gt;
+&lt;li&gt;从Step 2开始复制代码到命令行运行，直到Step7
+&lt;pre&gt;&lt;code&gt;step 2
+hugo new site githubID.github.io
+   
+step 3
+cd githubID.github.io
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+step 4
+hugo new posts/博客标题.md
+
+step 5
+hugo server -D
+
+step 6
+在VSCode中打开config.toml，可修改语言、标题
+
+step 7
+hugo -D
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;其中public目录就是我们的博客站点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo server -D可以预览草稿&lt;/li&gt;
+&lt;li&gt;hugo server 可以预览非草稿&lt;/li&gt;
+&lt;li&gt;修改draft的true/false值即可更改草稿/非草稿值
+4.最后使用 &lt;code&gt;hugo server&lt;/code&gt; 预览&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>首次入驻</title>
+      <link>http://localhost:1313/post/%E9%A6%96%E6%AC%A1%E5%85%A5%E9%A9%BB/</link>
+      <pubDate>Thu, 30 Apr 2020 23:09:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E9%A6%96%E6%AC%A1%E5%85%A5%E9%A9%BB/</guid>
+      
+        <description>&lt;h1 id=&#34;各位好&#34;&gt;各位好&lt;/h1&gt;
+&lt;p&gt;这是我第一次写博客，希望后面能做得更好！qwq&lt;/p&gt;
+</description>
+      
     </item>
     
   </channel>
